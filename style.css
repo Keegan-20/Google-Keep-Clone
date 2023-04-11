@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    min-height: 100vh;
+    width:100%;
+    background-color: #333;
+    padding: 23px;
+}
+
+#input-box{
+    margin: auto;
+    border:1px solid rgb(5, 2, 2);
+    max-width: 850px;
+    padding: 23px 12px ;
+}
+
+input,textarea{
+    width:100%;
+    background-color: transparent;
+    border: none;
+    padding: 8px 0;
+    outline:none;
+    text-transform: capitalize;
+    color:#ffff;
+}
+
+#addButton{
+    background-color: transparent;
+    padding: 5px 12px;
+    color: #ffff;
+    box-shadow: 2px 2px 23px rgb(14, 9, 9);
+     border-radius: 15px;
+}
+
+#addTitle,.title{
+    font-weight:900 ;
+}
+#addNotesDiv{
+    /* border:2px solid red; */
+    display: flex;
+    justify-content:ce;
+     flex-wrap: wrap;
+     margin-top: 10px;
+
+}
+.note{
+    flex-basis:25%;
+    width:200px;
+    margin: 10px 3px ;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: #ffff;
+    padding: 20px 12px;
+    border:1px solid black;
+}
+
+.title{
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom:0.2rem;
+}
+.text{
+    padding-bottom: 0.3rem;
+}
