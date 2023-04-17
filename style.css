@@ -7,14 +7,16 @@
 .container{
     min-height: 100vh;
     width:100%;
-    background-color: #333;
-    padding: 23px;
+    background:url(./img/bg1.png) no-repeat center center  ;
+    background-size: cover;
+    padding: 23px 12px;
 }
 
 #input-box{
     margin: auto;
-    border:1px solid rgb(5, 2, 2);
+    border:1px solid rgb(244, 244, 244);
     max-width: 850px;
+    border-radius: 12px;
     padding: 23px 12px ;
 }
 
@@ -29,11 +31,28 @@ input,textarea{
 }
 
 #addButton{
-    background-color: transparent;
-    padding: 5px 12px;
+    background-color: rgb(208, 55, 131);
+    padding: 8px 31px;
+    font-size: 16px;
     color: #ffff;
+    font-weight: 800;
     box-shadow: 2px 2px 23px rgb(14, 9, 9);
-     border-radius: 15px;
+    border-radius: 100px;
+}
+.deleteButton,.restoreButton{
+    background-color: rgb(208, 55, 131);
+    padding: 5px 8px;
+    color:#ffff;
+    border: none;
+    outline: none;
+    font-size:1.2rem;
+    border-radius: 23px;
+}
+h3{
+color:#ffff;    
+}
+.deleteButton:hover{
+    background-color:purple;
 }
 
 #addTitle,.title{
@@ -42,22 +61,50 @@ input,textarea{
 #addNotesDiv{
     /* border:2px solid red; */
     display: flex;
-    justify-content:ce;
+    justify-content:center;
      flex-wrap: wrap;
-     margin-top: 10px;
+     margin-top: 14px;
+   /* background-color: hotpink; */
+}
 
+#deleteNotesDiv{
+    /* background-color: rgb(221, 111, 111); */
+    padding: 4rem  2rem;
+    margin:23px 0;
+    flex-direction:  row;
 }
 .note{
     flex-basis:25%;
-    width:200px;
-    margin: 10px 3px ;
-    border-radius: 5px;
-    background-color: blueviolet;
-    color: #ffff;
+    aspect-ratio: 0.5/0;
+    margin: 10px; 
+    border-radius: 8px;
+    background-color: rgb(134, 78, 186);
+    color:#ffff;
+    padding: 4rem 0;
     padding: 20px 12px;
-    border:1px solid black;
+    box-shadow: 2px 8px 14px blueviolet;
+   border:2px solid transparent;
 }
 
+
+
+.dnote{
+    display:inline-block;
+    flex-basis:25%;
+    width:250px;
+    margin: 10px 3px ;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(200, 28, 28);
+    color:#ffff;
+    padding: 20px 12px;
+    border:1px solid transparent;
+}
+.dtext{
+    text-decoration: line-through; 
+    text-decoration-color: black;
+    text-align: center;
+}
 .title{
     text-align: center;
     font-size: 1rem;
