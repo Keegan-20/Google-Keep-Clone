@@ -35,7 +35,7 @@ li{
 }
 
 .nav-link:hover{
-    color:rgb(208, 55, 131);
+    color:purple;
     border-bottom:2px solid #fff;
 }
 
@@ -43,7 +43,7 @@ li{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    min-height:70px;
+    min-height:53px;
     padding: 0 2rem;
 }
 
@@ -106,6 +106,11 @@ li{
     color: black;
 }
 
+#deleteNotesDiv{
+    flex-direction: column;
+}
+
+
 }
 
 .container{
@@ -153,6 +158,8 @@ input,textarea{
     font-size:1.2rem;
     border-radius: 23px;
 }
+
+
 .restoreButton{
     margin-top: 0.8rem;
 }
@@ -177,7 +184,9 @@ input,textarea{
 
 h3{
 color:#ffff;
-justify-content: center;  
+justify-content: center; 
+/* background-color: red; */
+display: block; 
 padding: 12px;  
 
 }
@@ -192,8 +201,7 @@ padding: 12px;
 #addNotesDiv,#archiveNotesDiv{
     /* border:2px solid red; */
      display: flex;
-     justify-content: center;
-    
+     justify-content: center; 
      flex-wrap: wrap;
      margin-top: 14px;
 }
@@ -204,6 +212,7 @@ padding: 12px;
     padding: 4rem 2rem;
     display: flex;
     margin: 23px 0;
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
 }
@@ -232,13 +241,11 @@ padding: 12px;
 
 }
 .dnote{
-    display:inline-block;
-    flex-basis:25%;
     width:250px;
     margin: 10px 3px ;
     text-align: center;
     border-radius: 5px;
-    background-color: rgb(200, 28, 28);
+    background-color: rgb(215, 24, 24);
     color:#ffff;
     padding: 20px 12px;
     border:1px solid transparent;
@@ -256,3 +263,99 @@ padding: 12px;
 .text{
     padding-bottom: 0.3rem;
 }
+
+@media screen and (max-width: 768px) {
+    .container{
+    padding: 23px 6px;
+    }
+    
+    #input-box{
+    max-width: 100%;
+    border-radius: 12px;
+    padding: 23px 12px ;
+    }
+    
+    .note,.enote,.archived-note{
+    flex-basis: 100%;
+    }
+    
+    #deleteNotesDiv{
+    padding: 2rem 1rem;
+    }
+    
+    .dnote{
+    width: 100%;
+    margin: 10px 0;
+    }
+ 
+
+    .unarchiveButton,.restoreButton{
+        float: right;
+        }
+        .archiveButton{
+            float: right;
+            margin-top: 0.5rem;
+            margin-right: 0.3rem;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+    .container{
+    padding: 23px 3px;
+    }
+    
+    #input-box{
+    max-width: 100%;
+    border-radius: 12px;
+    padding: 23px 12px ;
+    }
+    
+    .note,.enote,.archived-note{
+    flex-basis: 100%;
+    }
+    
+    #deleteNotesDiv{
+    padding: 2rem 1rem;
+    }
+    
+    .dnote{
+    width: 100%;
+    margin: 10px 0;
+    }
+    
+    #addButton{
+        font-size: 14px;
+        padding: 8px 15px;
+        border-radius: 50%;
+    }
+    
+    .editButton,.unarchiveButton{
+    font-size: 0.6rem;
+    padding: 0.2rem 0.6rem;
+    }
+    
+    .deleteButton,.restoreButton, .editButton,
+    #saveButton,.archiveButton,.unarchiveButton{
+    font-size: 1rem;
+    border-radius: 15px;
+    }
+    
+    #editNote{
+    font-size: 0.8rem;
+    }
+ 
+    
+    .text{
+       text-align: center;
+    }
+ }
+
+    @media screen and (max-width:340px){
+.archiveButton{
+    margin-left: 8.5rem;
+}
+
+.restoreButton {
+    margin-left: 5rem;
+}
+    }

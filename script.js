@@ -26,9 +26,9 @@ const add = () => {
 
   } 
   const userTitle = addTitle.value.trim();
-  const userText = addingNote.value.trim();
+  const userText = addingNote.value.trim().replace(/\n/g, '<br>'); //break the line on hitting enter
 
-  if (!userTitle || !userText) return; // validate user input
+  // if (!userTitle || !userText) return; // validate user input
 
   const addNoteObj = {
     user_title: userTitle,
