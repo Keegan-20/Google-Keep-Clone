@@ -8,19 +8,53 @@
     <title>Google Keep Clone</title>
 </head>
 <body>
+
+    <!-- navigation bar starts here -->
+    <header>
+        
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Keep Notes.</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#input-box" class="nav-link">Add Notes</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#delete" class="nav-link">Delete Notes</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#archive" class="nav-link">Archieve Notes</a>
+                </li>
+
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+             <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
     <div class="container">
         <div id="input-box">
-            <input type="text" id="addTitle" placeholder="Title">
+            <input type="text" id="addTitle" placeholder="Title">  
             <textarea name="add notes" id="addNote" cols="30" rows="10" placeholder="Take a Note..."></textarea>
-                  <button id="addButton"><i class="fa-solid fa-plus"></i></button>
+            <!-- add button -->
+        <button id="addButton"><i class="fa-solid fa-plus"></i></button>
         </div>
-        <div id="addNotesDiv"> </div>
-        <div id="deleteNotesDiv">
-      
-    </div>
 
-     
-    </div>
+        <section id="add">
+            <div id="addNotesDiv"> </div>
+        </section>
+
+        <section id="delete">
+            <div id="deleteNotesDiv"> </div>
+        </section>
+
+        <section id="archive">
+            <div id="archiveNotesDiv"></div>
+        </section>
+        
     <script src="https://kit.fontawesome.com/85a7e9f6f5.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
