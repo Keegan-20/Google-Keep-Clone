@@ -1,5 +1,5 @@
 # Keep Notes 
-A web application built with JavaScript that allows users to add, edit, delete, and archive their notes.
+A web application built with JavaScript that allows users to add, edit, delete, and archive their notes.Keep Notes is designed with a user-friendly interface, making it easy for anyone to use. Whether you're a student, professional, or someone who needs to keep track of various tasks, Keep Notes is a great solution for managing notes in an organized and efficient manner.
 
 ## Features
 * Add a note with a title and description
