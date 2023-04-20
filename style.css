@@ -56,11 +56,12 @@ li{
 .hamburger{
     display: none;
     cursor: pointer;
+   
 } 
 
 .bar{
  display: block;
- background-color: #fff;
+ background-color:#ffff;
  width: 27px;
  height: 3px;
  margin: 0.4rem;
@@ -87,7 +88,7 @@ li{
  .nav-menu{
  position:fixed;
  left:-100%;
- top:70px; 
+ top:53px; 
  width: 100%; 
  flex-direction: column;
  background-color:rgb(208, 55, 131);
